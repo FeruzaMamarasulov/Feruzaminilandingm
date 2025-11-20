@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feruza Mamarasulova - Mentorlik</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+    * {box-sizing: border-box; margin: 0; padding: 0;}
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #0c0c0c;
+        color: #ffffff;
+        overflow-x: hidden;
+    }
+
+    /* Animatsiyali feruza chiziqlar */
+    .background-lines {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: repeating-linear-gradient(
+            135deg,
+            rgba(254, 100, 156, 0.08),
+            rgba(254, 100, 156, 0.08) 2px,
+            transparent 2px,
+            transparent 25px
+        );
+        z-index: 0;
+        animation: moveLines 20s linear infinite;
+    }
+
+    @keyframes moveLines {
+        0% {background-position: 0 0;}
+        100% {background-position: 1000px 1000px;}
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 50px 20px;
+        text-align: center;
+        animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+
+    h1, h2, h3, p {
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        opacity: 0;
+        animation: fadeUp 1s ease forwards;
+    }
+
+    h1 {font-size: 2.5em; color: #fe649c; margin-bottom: 10px; animation-delay: 0.3s;}
+    h2 {font-size: 2em; margin-bottom: 20px; animation-delay: 0.6s;}
+    h3 {font-size: 1.5em; margin: 15px 0; animation-delay: 0.9s;}
+    p {font-size: 1.1em; line-height: 1.6; margin: 10px 0; animation-delay: 1.2s;}
+
+    @keyframes fadeUp {
+        from {opacity: 0; transform: translateY(20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+
+    .highlight {
+        color: #fe649c;
+        font-weight: 700;
+    }
+
+    .button {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 15px 30px;
+        background-color: #ff0000;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.1em;
+        border-radius: 8px;
+        box-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .button:hover {
+        transform: scale(1.05);
+        box-shadow: 4px 4px 10px rgba(0,0,0,0.7);
+    }
+
+    .stats {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 25px;
+        flex-wrap: wrap;
+    }
+
+    .stat-item {
+        font-size: 1.2em;
+        opacity: 0;
+        animation: fadeUp 1s ease forwards;
+    }
+
+    .stat-item:nth-child(1) {animation-delay: 1.5s;}
+    .stat-item:nth-child(2) {animation-delay: 1.8s;}
+
+    /* Responsive mobil uchun */
+    @media (max-width: 768px) {
+        h1 {font-size: 2em;}
+        h2 {font-size: 1.6em;}
+        h3 {font-size: 1.3em;}
+        .stats {flex-direction: column; gap: 20px;}
+    }
+</style>
+</head>
+<body>
+<div class="background-lines"></div>
+
+<div class="container">
+    <h1>Feruza Mamarasulova</h1>
+    <h2>Integrativ-Eklektik Psixolog | 11 yillik tajriba | Oliy toifali</h2>
+
+    <h3>Professional Psixolog Mentorligi</h3>
+    <p><span class="highlight">2 modul</span> | Mentorlik kursi | Sertifikat bilan</p>
+    <p><span class="highlight">Tahsil olgan joylar:</span> O‘zbekiston, Tojikiston, Turkiya, Moskva, Amerika</p>
+
+    <h3>Sizga yordam beradigan sohalar:</h3>
+    <p>Shaxsiy va professional psixologik kompetensiyalarni rivojlantirish</p>
+    <p>Murakkab holatlarda psixologik diagnostika va konsalting</p>
+    <p>Stress, travma va ichki konfliktlarni professional darajada boshqarish</p>
+    <p>Oilaviy, juftlik va munosabatlar psixologiyasi</p>
+    <p>Motivatsiya, qaror qabul qilish va shaxsiy o‘sish strategiyalari</p>
+    <p>Treninglar, master-klasslar va maslahatlar orqali real amaliy natija</p>
+
+Sevgili, [20.11.2025 6:37]
+<div class="stats">
+        <div class="stat-item"><span class="highlight">400+</span> Mijozlar</div>
+        <div class="stat-item"><span class="highlight">190+</span> O‘quvchilar</div>
+    </div>
+
+    <a href="https://t.me/Mrs_Mamarasulova_Admin" class="button">Batafsil</a>
+
+    <h3>Ijtimoiy tarmoqlarda bog‘lanish:</h3>
+    <p>Telegram: <a href="https://t.me/Mrs_Mamarasulova_Admin" class="highlight">Mrs_Mamarasulova</a></p>
+    <p>YouTube: <a href="https://www.youtube.com/@Mrs_Mamarasulova" class="highlight">Mrs_Mamarasulova</a></p>
+</div>
+</body>
+</html>
